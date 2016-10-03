@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
                     String height = response.getString("height");
                     String weight =  response.getString("weight");
                     String basexp =  response.getString("base_experience");
-                    String sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png";
+                    JSONObject sprites = (JSONObject) response.get("sprites");
+                    String sprite = sprites.getString("front_default");
 
                     Pokemon pokemon = new Pokemon(name, number, basexp, types, height, weight, sprite);
                     pokemonList.add(pokemon);
