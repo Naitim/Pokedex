@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:padding="2dp"
+    android:id="@+id/list_Layout"
+    >
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/pokemon_imageView"
+        android:scaleType="fitXY"
+        android:padding="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="32dp" />
+
+    <!--<ImageView
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:id="@+id/type1_imageView"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/name_textView"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:id="@+id/type2_imageView2"
+        android:paddingRight="4dp"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/type1_imageView"
+        android:layout_toStartOf="@+id/type1_imageView" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/name_textView"
+        android:paddingLeft="4dp"
+        android:layout_below="@+id/number_textView"
+        android:layout_toEndOf="@+id/pokemon_imageView"
+        android:paddingTop="15dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number"
+        android:id="@+id/number_textView"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/pokemon_imageView"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Types"
+        android:id="@+id/types_textView"
+        android:paddingTop="10dp"
+        android:layout_alignBottom="@+id/pokemon_imageView"
+        android:layout_alignEnd="@+id/name_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base EXP"
+        android:id="@+id/basexp_textView"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/name_textView"
+        android:layout_toEndOf="@+id/utube_button"
+        android:layout_marginStart="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:id="@+id/height_textView"
+        android:layout_alignBottom="@+id/types_textView"
+        android:layout_alignStart="@+id/basexp_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:id="@+id/weight_textView"
+        android:layout_alignBottom="@+id/name_textView"
+        android:layout_alignStart="@+id/basexp_textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moves"
+        android:id="@+id/info_button"
+        android:paddingRight="20dp"
+        android:layout_alignTop="@+id/utube_button"
+        android:layout_alignEnd="@+id/basexp_textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube"
+        android:id="@+id/utube_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/pokemon_imageView" />
+
+
+</RelativeLayout>
