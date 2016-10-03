@@ -81,7 +81,16 @@ public class MainActivity extends AppCompatActivity {
 
                     String name =  response.getString("name");
                     String number =  response.getString("id");
-                    String types = "placeholder";
+                    //String types = "placeholder";
+                    JSONArray typesAry = (JSONArray) response.getJSONArray("types");
+                    JSONObject typesObj = (JSONObject)typesAry.get(0);
+                    JSONObject typesObj2 = (JSONObject) typesObj.get("type");
+                    String types = typesObj2.getString("name");
+                    if(typesAry.length()== 2){
+                         typesObj = (JSONObject)typesAry.get(1);
+                         typesObj2 = (JSONObject) typesObj.get("type");
+                         types = types + ", " + typesObj2.getString("name");
+                    }
                     String height = response.getString("height");
                     String weight =  response.getString("weight");
                     String basexp =  response.getString("base_experience");
