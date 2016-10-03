@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
                     String height = response.getString("height");
                     String weight =  response.getString("weight");
                     String basexp =  response.getString("base_experience");
-                    //String sprite = "http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png";
+                    String sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png";
 
-                    Pokemon pokemon = new Pokemon(name, number, basexp, types, height, weight);
+                    Pokemon pokemon = new Pokemon(name, number, basexp, types, height, weight, sprite);
                     pokemonList.add(pokemon);
                     mAdapter.notifyDataSetChanged();
 

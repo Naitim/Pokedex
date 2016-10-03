@@ -70,8 +70,8 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.MyViewHo
         holder.baseaxp.setText("BaseXP: " +pokemon.getBasexp());
         holder.weight.setText("Weight(KG): " +pokemon.getWeight());
         holder.height.setText("Height(M): " + pokemon.getHeight());
-        //Context context = holder.spriteURL.getContext();
-        //Picasso.with(context).load("http://orig09.deviantart.net/c3ee/f/2014/008/4/9/pikachu_silhouette_by_ba_ru_ga-d71ggri.png").into(holder.spriteURL);
+        Context context = holder.spriteURL.getContext();
+        Picasso.with(context).load(pokemon.getSpriteURL()).into(holder.spriteURL);
     }
 
     @Override
