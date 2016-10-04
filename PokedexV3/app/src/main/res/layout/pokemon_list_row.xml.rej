@@ -1,0 +1,13 @@
+diff a/PokedexV3/app/src/main/res/layout/pokemon_list_row.xml b/PokedexV3/app/src/main/res/layout/pokemon_list_row.xml	(rejected hunks)
+@@ -113,7 +113,11 @@
+          android:id="@+id/utube_button"
+          android:layout_alignParentBottom="true"
+          android:layout_toEndOf="@+id/pokemon_imageView"
+++<<<<<<< HEAD
+ +        android:visibility="invisible" />
+++=======
++         android:clickable="true" />-->
+++>>>>>>> 233956e... no message
+  
+  
+  </RelativeLayout>

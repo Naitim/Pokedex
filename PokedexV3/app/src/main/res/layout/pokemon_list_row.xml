@@ -98,7 +98,8 @@
         android:id="@+id/info_button"
         android:paddingRight="20dp"
         android:layout_alignTop="@+id/utube_button"
-        android:layout_alignEnd="@+id/basexp_textView" />
+        android:layout_alignEnd="@+id/basexp_textView"
+        android:visibility="invisible" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -107,7 +108,8 @@
         android:text="Youtube"
         android:id="@+id/utube_button"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/pokemon_imageView" />
+        android:layout_toEndOf="@+id/pokemon_imageView"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>
