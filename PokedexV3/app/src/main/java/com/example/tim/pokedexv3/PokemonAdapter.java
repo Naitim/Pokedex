@@ -4,12 +4,16 @@ package com.example.tim.pokedexv3;
  * Created by Tim on 03-Oct-16.
  */
 
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,6 +38,8 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.MyViewHo
         public TextView weight;
         public TextView height;
         public ImageView spriteURL;
+        public Button moves;
+        public Button utube;
 
         public MyViewHolder(View view) {
             super(view);
@@ -44,6 +50,18 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.MyViewHo
             weight = (TextView) view.findViewById(R.id.weight_textView);
             height = (TextView) view.findViewById(R.id.height_textView);
             spriteURL = (ImageView) view.findViewById(R.id.pokemon_imageView);
+           /* moves = (Button) view.findViewById(R.id.info_button);
+            moves.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v){
+                    Intent internetIntent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://www.youtube.com/results?search_query="+name.getText()));
+                    internetIntent.setComponent(new ComponentName("com.android.browser","com.android.browser.BrowserActivity"));
+                    internetIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    v.getContext().startActivity(internetIntent);
+                    }
+            }*/
+
+
 
         }
     }

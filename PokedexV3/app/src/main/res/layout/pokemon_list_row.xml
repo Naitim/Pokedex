@@ -90,7 +90,7 @@
         android:layout_alignBottom="@+id/name_textView"
         android:layout_alignStart="@+id/basexp_textView" />
 
-    <Button
+    <!--<Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,7 +98,8 @@
         android:id="@+id/info_button"
         android:paddingRight="20dp"
         android:layout_alignTop="@+id/utube_button"
-        android:layout_alignEnd="@+id/basexp_textView" />
+        android:layout_alignEnd="@+id/basexp_textView"
+        android:clickable="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -107,7 +108,8 @@
         android:text="Youtube"
         android:id="@+id/utube_button"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/pokemon_imageView" />
+        android:layout_toEndOf="@+id/pokemon_imageView"
+        android:clickable="true" />-->
 
 
 </RelativeLayout>

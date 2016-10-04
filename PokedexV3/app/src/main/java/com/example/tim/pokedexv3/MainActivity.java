@@ -98,9 +98,10 @@ public class MainActivity extends AppCompatActivity {
                     String sprite = sprites.getString("front_default");
 
                     Pokemon pokemon = new Pokemon(name, number, basexp, types, height, weight, sprite);
-                    pokemonList.add(pokemon);
-                    mAdapter.notifyDataSetChanged();
-
+                    if(sprite != null) {
+                        pokemonList.add(pokemon);
+                        mAdapter.notifyDataSetChanged();
+                    }
 
 
                 } catch (JSONException e) {
